@@ -1,0 +1,17 @@
+# == git
+.git/
+.gitignore
+.husky/
+
+# == dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.json
+bun.lockb
+
+# == config files
+tsconfig.json
+
+# == source code
+src/

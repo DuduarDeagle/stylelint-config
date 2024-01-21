@@ -1,0 +1,41 @@
+const group = {
+	groupName: "flow",
+	noEmptyLineBetween: true,
+	emptyLineBefore: "always",
+	properties: [
+		"display",
+		"tab-size",
+		"table-layout",
+		"flex-direction",
+		"flex-basis",
+		"flex-shrink",
+		"flex-grow",
+		"flex-wrap",
+		"order",
+		"grid-auto-flow",
+		"grid-auto-columns",
+		"grid-auto-rows",
+		"grid-template",
+		"grid-template-columns",
+		"grid-template-rows",
+		"grid-area",
+		"grid-column",
+		"grid-column-start",
+		"grid-column-end",
+		"grid-row",
+		"grid-row-start",
+		"grid-row-end",
+		"justify-content",
+		"justify-items",
+		"justify-self",
+		"align-content",
+		"align-items",
+		"align-self",
+		"place-content",
+		"place-items",
+		"place-self",
+		"gap"
+	]
+}
+
+export default group
