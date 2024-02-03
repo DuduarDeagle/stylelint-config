@@ -21,6 +21,12 @@ const config = {
 	plugins: ["stylelint-order"],
 	rules: {
 		"import-notation": ["string"],
+		"at-rule-no-unknown": [
+			true,
+			{
+				ignoreAtRules: ["define-mixin", "add-mixin"]
+			}
+		],
 		"order/order": [
 			[
 				{
