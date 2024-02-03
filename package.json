@@ -1,7 +1,7 @@
 {
 	"name": "@duduardeagle/stylelint-config",
 	"description": "Opinionated Stylelint configuration",
-	"version": "0.1.0-alpha.0",
+	"version": "0.1.0",
 	"author": {
 		"name": "Duduar Deagle",
 		"email": "duduar@skiff.com"
