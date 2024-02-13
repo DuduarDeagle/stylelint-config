@@ -47,9 +47,10 @@ const config = {
 			}
 		],
 		"selector-class-pattern": [
-			"(^[a-z]+(-{0,2}[a-z])*$)|(^[a-z]+([A-Z]?[a-z])*$)",
+			"^[a-z]+(_{0,2}[a-z]+)?(-{0,2}[a-z]+)?$",
 			{
-				message: "Expected '%s' to match with kebab-case or camelCase"
+				message:
+					"Expected '%s' to match with BEM methodology. More info at: https://getbem.com/"
 			}
 		],
 		"function-no-unknown": [
