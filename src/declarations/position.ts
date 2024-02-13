@@ -4,7 +4,6 @@ const group = {
 	emptyLineBefore: "never",
 	properties: [
 		"position",
-		"z-index",
 		"top",
 		"right",
 		"bottom",
@@ -15,7 +14,8 @@ const group = {
 		"inset-block-end",
 		"inset-inline",
 		"inset-inline-start",
-		"inset-inline-end"
+		"inset-inline-end",
+		"z-index"
 	]
 }
 

@@ -13,8 +13,8 @@ const group = {
 		"transition-delay",
 		"animation",
 		"scroll-snap-type",
-		"scroll-snap-stop",
 		"scroll-snap-align",
+		"scroll-snap-stop",
 		"scroll-behavior"
 	]
 }

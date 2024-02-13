@@ -2,7 +2,7 @@ const group = {
 	groupName: "accesibility",
 	noEmptyLineBetween: true,
 	emptyLineBefore: "always",
-	properties: ["cursor", "pointer-events", "touch-action", "user-select"]
+	properties: ["pointer-events", "touch-action", "user-select", "cursor"]
 }
 
 export default group
