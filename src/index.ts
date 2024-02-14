@@ -103,10 +103,9 @@ const config = {
 			}
 		],
 		"selector-class-pattern": [
-			"^[a-z]+(_{0,2}[a-z]+)?(-{0,2}[a-z]+)?$",
+			"^[a-z]+([_,-]{0,2}[a-z]+)*$",
 			{
-				message:
-					"Expected '%s' to match with lower-case and BEM methodology. More info at: https://getbem.com/"
+				message: "Expected '%s' to match with kebab-case"
 			}
 		],
 		"function-no-unknown": [
