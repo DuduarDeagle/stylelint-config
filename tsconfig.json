@@ -19,7 +19,7 @@
 		"noPropertyAccessFromIndexSignature": true,
 		"baseUrl": ".",
 		"paths": {
-			"@declarations/*": ["src/declarations/*"]
+			"@properties/*": ["src/properties/*"]
 		}
 	}
 }

@@ -1,12 +1,12 @@
-import accesibility from "@declarations/accesibility"
-import background from "@declarations/background"
-import boxModel from "@declarations/boxModel"
-import flow from "@declarations/flow"
-import fx from "@declarations/fx"
-import position from "@declarations/position"
-import typography from "@declarations/typography"
+import accesibility from "@properties/accesibility"
+import background from "@properties/background"
+import boxModel from "@properties/boxModel"
+import flow from "@properties/flow"
+import fx from "@properties/fx"
+import position from "@properties/position"
+import typography from "@properties/typography"
 
-const declarations = [
+const properties = [
 	position,
 	boxModel,
 	flow,
@@ -79,7 +79,7 @@ const config = {
 			}
 		],
 		"order/properties-order": [
-			declarations,
+			properties,
 			{
 				severity: "error",
 				unspecified: "bottomAlphabetical",
