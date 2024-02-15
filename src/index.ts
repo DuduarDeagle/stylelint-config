@@ -40,10 +40,6 @@ const config = {
 		],
 		"order/order": [
 			[
-				{
-					type: "at-rule",
-					name: "import"
-				},
 				"dollar-variables",
 				"custom-properties",
 				{
