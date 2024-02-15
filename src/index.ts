@@ -44,6 +44,10 @@ const config = {
 				"custom-properties",
 				{
 					type: "at-rule",
+					name: "define-mixin"
+				},
+				{
+					type: "at-rule",
 					name: "add-mixin"
 				},
 				"declarations",
