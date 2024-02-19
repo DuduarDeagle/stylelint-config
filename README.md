@@ -360,6 +360,7 @@ Additionally, you can keep up to date with changes on the [Releases page](https:
 ## ©️ LICENSE
 
 **@duduardeagle/stylelint-config**
+
 _Copyright (c) 2024 Duduar Deagle_
 
 Licensed under the MIT License (the "License"); you may not use this Software except in compliance with the License. You should have received a copy of the License with this Software or you may obtain a copy of the License at:
