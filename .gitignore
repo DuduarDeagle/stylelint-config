@@ -1,8 +1,8 @@
-# == dependencies
+# dependencies
 node_modules/
 package-lock.json
 yarn.lock
 pnpm-lock.json
 
-# == build
+# build
 dist/
