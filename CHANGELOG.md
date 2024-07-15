@@ -1,5 +1,13 @@
 # 📜 CHANGELOG
 
+## 🔖 Version 1.1.0
+
+_July 15, 2024_
+
+### ✨ Features
+
+- Added TailwindCSS compatibility
+
 ## 🔖 Version 1.0.0
 
 _February 14, 2024_

@@ -35,7 +35,7 @@ const config = {
 		"at-rule-no-unknown": [
 			true,
 			{
-				ignoreAtRules: ["define-mixin", "add-mixin"]
+				ignoreAtRules: ["tailwind", "define-mixin", "add-mixin", "apply"]
 			}
 		],
 		"order/order": [

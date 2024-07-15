@@ -19,6 +19,7 @@ Tell me 💬 what do you think about it?, will you use it?, why? I look forward 
 - Autofixing support
 - Can be perfectly used with [BEM](https://getbem.com/) methodology
 - Supported integrations:
+  - [TailwindCSS](https://tailwindcss.com)
   - [postcss-mixins](https://www.npmjs.com/package/postcss-mixins)
 
 ### 📝 Order rules
