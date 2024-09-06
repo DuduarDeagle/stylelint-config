@@ -1,4 +1,4 @@
-import accesibility from "@properties/accesibility"
+import accessibility from "@properties/accessibility"
 import background from "@properties/background"
 import boxModel from "@properties/boxModel"
 import flow from "@properties/flow"
@@ -13,7 +13,7 @@ const properties = [
 	typography,
 	background,
 	fx,
-	accesibility
+	accessibility
 ]
 
 const config = {
