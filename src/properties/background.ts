@@ -5,6 +5,7 @@ const group = {
 	properties: [
 		"appearance",
 		"content",
+		"accent-color",
 		"fill",
 		"background",
 		"background-image",
