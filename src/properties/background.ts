@@ -15,8 +15,10 @@ const group = {
 		"background-attachment",
 		"background-position",
 		"background-clip",
-		"backdrop-filter",
+		"mask-image",
+		"mask-mode",
 		"filter",
+		"backdrop-filter",
 		"opacity",
 		"box-shadow"
 	]
