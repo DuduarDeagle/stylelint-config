@@ -82,12 +82,12 @@ const config = {
 				},
 				{
 					type: "rule",
-					name: "modifiers",
+					name: "bem-modifiers",
 					selector: "^&-{1,2}[a-z]+(-[a-z]+)*$"
 				},
 				{
 					type: "rule",
-					name: "elements",
+					name: "bem-elements",
 					selector: "^&__[a-z]+(-[a-z]+)*$"
 				},
 				"rules",
