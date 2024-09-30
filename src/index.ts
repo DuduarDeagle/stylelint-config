@@ -67,23 +67,28 @@ const config = {
 				"declarations",
 				{
 					type: "rule",
-					selector: "^&?::[a-z]+$",
-					name: "pseudo-elements"
+					name: "pseudo-elements",
+					selector: "^&?::[a-z]+$"
 				},
 				{
 					type: "rule",
-					selector: "^&?:[a-z]+$",
-					name: "pseudo-classes"
+					name: "pseudo-classes",
+					selector: "^&?:[a-z]+$"
 				},
 				{
 					type: "rule",
-					selector: "^&-{1,2}[a-z]+(-[a-z]+)*$",
-					name: "modifiers"
+					name: "attribute-selectors",
+					selector: '^&\\[[a-z]+\\S{1,2}".+"\\]$'
 				},
 				{
 					type: "rule",
-					selector: "^&__[a-z]+(-[a-z]+)*$",
-					name: "elements"
+					name: "modifiers",
+					selector: "^&-{1,2}[a-z]+(-[a-z]+)*$"
+				},
+				{
+					type: "rule",
+					name: "elements",
+					selector: "^&__[a-z]+(-[a-z]+)*$"
 				},
 				"rules",
 				{
