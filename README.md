@@ -26,16 +26,18 @@ Tell me 💬 what do you think about it?, will you use it?, why? I look forward 
 
 ✳️ In general, the order of content within declaration blocks should be organized as follows:
 
-- dollar variables (e.g., `$color: red;`)
-- custom properties (e.g., `--color: red;`)
-- @add-mixin at-rule (postcss-mixins)
+- Dollar variables (e.g., `$color: red;`)
+- Custom properties (e.g., `--color: red;`)
+- Mixin at-rules (postcss-mixins)
+- @apply at-rule
 - CSS properties
 - CSS pseudo-elements (e.g., `::placeholder`, `::before`, `::after`)
 - CSS pseudo-classes (e.g., `:hover`, `:active`)
-- Nested BEM annotations
-- Nested tags
+- CSS attribute selectors (e.g., `[type="button"]`)
+- Nested rules
+- BEM annotations
 - @media at-rule
-- unspecified elements
+- Unspecified elements
 
 ✳️ CSS properties are ordered as follows:
 
@@ -249,6 +251,7 @@ Tell me 💬 what do you think about it?, will you use it?, why? I look forward 
     <ul>
         <li>appearance</li>
 		<li>content</li>
+        <li>accent-color</li>
 		<li>fill</li>
 		<li>background</li>
 		<li>background-image</li>
@@ -258,8 +261,10 @@ Tell me 💬 what do you think about it?, will you use it?, why? I look forward 
 		<li>background-attachment</li>
 		<li>background-position</li>
 		<li>background-clip</li>
-		<li>backdrop-filter</li>
+        <li>mask-image</li>
+        <li>mask-mode</li>
 		<li>filter</li>
+        <li>backdrop-filter</li>
 		<li>opacity</li>
 		<li>box-shadow</li>
     </ul>
@@ -316,7 +321,6 @@ For example:
    }
    ```
 
-   > [!TIP]
    > You can configure Stylelint in your package.json file. Just add:
    >
    > ```json
@@ -350,7 +354,7 @@ For example:
 
 CSS order is 100% opinionated 🤔, but I try to hand-pick it in the most logical way to improve process of refactoring.
 
-If you think something can be improved or just doesn't make sense, please open an issue so we can discuss 🙏; also feel free to fork this repo and create your own 🤝.
+If you think something can be improved or just doesn't make sense, please open an issue so we can discuss; also feel free to fork this repo and create your own 🤝.
 
 ## 📜 CHANGELOG
 
@@ -364,7 +368,7 @@ Additionally, you can keep up to date with changes on the [Releases page](https:
 
 _Copyright (c) 2024 Duduar Deagle_
 
-Licensed under the MIT License (the "License"); you may not use this Software except in compliance with the License. You should have received a copy of the License with this Software or you may obtain a copy of the License at:
+Licensed under the MIT License (the "License"); you must not use this Software except in compliance with the License. You may obtain a copy of the License with this Software or you must obtain a copy of the License at:
 
 https://spdx.org/licenses/MIT.html
 
