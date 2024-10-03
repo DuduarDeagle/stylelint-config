@@ -80,6 +80,7 @@ const config = {
 					name: "attribute-selectors",
 					selector: '^&\\[[a-z]+\\S{1,2}".+"\\]$'
 				},
+				"rules",
 				{
 					type: "rule",
 					name: "bem-modifiers",
@@ -90,7 +91,6 @@ const config = {
 					name: "bem-elements",
 					selector: "^&__[a-z]+(-[a-z]+)*$"
 				},
-				"rules",
 				{
 					type: "at-rule",
 					name: "media",
