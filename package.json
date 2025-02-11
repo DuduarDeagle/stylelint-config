@@ -26,6 +26,7 @@
 		"@types/bun": "1.1.14",
 		"@typescript-eslint/eslint-plugin": "8.18.0",
 		"@typescript-eslint/parser": "8.18.0",
+		"concurrently": "9.1.2",
 		"eslint": "8.57.0",
 		"eslint-config-prettier": "9.1.0",
 		"gitmoji-cli": "9.5.0",
@@ -142,10 +143,12 @@
 		"prepare": "husky",
 		"prepublishOnly": "bun run build",
 		"build": "bun build src/index.ts --target=node --outdir dist/ --minify",
-		"lint": "eslint . --ext .js,.cjs,.mjs,.ts",
-		"prettier": "prettier . --check",
-		"prettier:fix": "prettier . --write",
-		"stylelint": "stylelint -c dist/index.js src/__test__/styles.css",
-		"stylelint:fix": "stylelint -c dist/index.js --fix src/__test__/styles.css"
+		"check": "concurrently 'bun run check:*'",
+		"check:lint": "eslint . --ext .js,.cjs,.mjs,.jsx,.ts,.tsx,.astro",
+		"check:prettier": "prettier . --check",
+		"check:stylelint": "stylelint -c dist/index.js src/__test__/styles.css",
+		"fix": "concurrently 'bun run fix:*'",
+		"fix:prettier": "prettier . --write",
+		"fix:stylelint": "stylelint -c dist/index.js --fix src/__test__/styles.css"
 	}
 }
