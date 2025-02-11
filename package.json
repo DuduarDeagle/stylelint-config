@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://codeberg.org/duduar/stylelint-config.git"
+		"url": "git+https://github.com/duduardeagle/stylelint-config.git"
 	},
 	"type": "module",
 	"private": false,
