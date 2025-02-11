@@ -40,7 +40,8 @@ const config = {
 					"define-mixin",
 					"mixin",
 					"add-mixin",
-					"apply"
+					"apply",
+					"theme"
 				]
 			}
 		],
