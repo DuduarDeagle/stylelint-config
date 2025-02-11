@@ -1,0 +1,41 @@
+const group = {
+	groupName: "typography",
+	noEmptyLineBetween: true,
+	emptyLineBefore: "always",
+	properties: [
+		"font",
+		"font-display",
+		"font-family",
+		"src",
+		"font-weight",
+		"font-style",
+		"text-rendering",
+		"font-smooth",
+		"font-variant-numeric",
+		"font-synthesis",
+		"text-transform",
+		"font-size",
+		"font-size-adjust",
+		"text-size-adjust",
+		"text-align",
+		"white-space",
+		"letter-spacing",
+		"text-wrap",
+		"color",
+		"caret-color",
+		"line-height",
+		"text-decoration",
+		"text-decoration-line",
+		"text-decoration-style",
+		"text-decoration-thickness",
+		"text-decoration-color",
+		"text-underline-offset",
+		"text-shadow",
+		"list-style",
+		"list-style-position",
+		"list-style-type",
+		"list-style-image"
+	]
+}
+
+export default group

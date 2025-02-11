@@ -1,0 +1,16 @@
+# Git
+.git/
+.gitignore
+.husky/
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.json
+bun.lockb
+bun.lock
+
+# Source code
+src/
+tsconfig.json

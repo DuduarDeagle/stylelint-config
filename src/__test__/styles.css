@@ -1,0 +1,33 @@
+button {
+	height: 40px;
+
+	background: red;
+
+	&[type="button"] {
+		background: blue;
+	}
+
+	&::before {
+		content: "Button";
+	}
+
+	&__label {
+		text-transform: uppercase;
+	}
+
+	.icon {
+		font-size: 1cap;
+	}
+
+	&:hover {
+		background: green;
+	}
+
+	&--secondary {
+		background: black;
+	}
+
+	@media (width >= 768px) {
+		width: 100%;
+	}
+}

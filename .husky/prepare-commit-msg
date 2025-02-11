@@ -1,0 +1,2 @@
+exec < /dev/tty
+bunx gitmoji --hook $1 $2

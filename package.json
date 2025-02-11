@@ -1,0 +1,151 @@
+{
+	"name": "@duduar/stylelint-config",
+	"description": "Opinionated Stylelint configuration by Duduar",
+	"version": "0.1.0",
+	"license": "MIT",
+	"author": {
+		"name": "Duduar",
+		"email": "support@duduar.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://codeberg.org/duduar/stylelint-config.git"
+	},
+	"type": "module",
+	"private": false,
+	"main": "dist/index.js",
+	"dependencies": {
+		"stylelint-config-standard": "36.0.1",
+		"stylelint-order": "6.0.4"
+	},
+	"peerDependencies": {
+		"stylelint": "16.x"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "19.6.0",
+		"@types/bun": "1.1.14",
+		"@typescript-eslint/eslint-plugin": "8.18.0",
+		"@typescript-eslint/parser": "8.18.0",
+		"eslint": "8.57.0",
+		"eslint-config-prettier": "9.1.0",
+		"gitmoji-cli": "9.5.0",
+		"husky": "9.1.7",
+		"lint-staged": "15.2.11",
+		"prettier": "3.4.2"
+	},
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"node": true,
+			"es2021": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/recommended",
+			"eslint-config-prettier"
+		],
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"rules": {
+			"sort-imports": [
+				"error",
+				{
+					"allowSeparatedGroups": true,
+					"ignoreCase": false,
+					"ignoreDeclarationSort": false,
+					"ignoreMemberSort": false,
+					"memberSyntaxSortOrder": [
+						"all",
+						"single",
+						"multiple",
+						"none"
+					]
+				}
+			]
+		}
+	},
+	"prettier": {
+		"printWidth": 80,
+		"useTabs": true,
+		"singleQuote": false,
+		"quoteProps": "as-needed",
+		"arrowParens": "avoid",
+		"bracketSpacing": true,
+		"bracketSameLine": true,
+		"semi": false,
+		"trailingComma": "none"
+	},
+	"lint-staged": {
+		"*.json": "prettier --check",
+		"*.md": "prettier --check",
+		"*.js": [
+			"prettier --check",
+			"eslint --quiet"
+		],
+		"*.cjs": [
+			"prettier --check",
+			"eslint --quiet"
+		],
+		"*.mjs": [
+			"prettier --check",
+			"eslint --quiet"
+		],
+		"*.ts": [
+			"prettier --check",
+			"eslint --quiet"
+		]
+	},
+	"gitmoji": {
+		"autoAdd": false,
+		"emojiFormat": "emoji",
+		"scopePrompt": false,
+		"messagePrompt": false,
+		"capitalizeTitle": true,
+		"gitmojisUrl": "https://gitmoji.dev/api/gitmojis"
+	},
+	"commitlint": {
+		"rules": {
+			"header-max-length": [
+				2,
+				"always",
+				50
+			],
+			"header-full-stop": [
+				2,
+				"never",
+				"."
+			],
+			"body-leading-blank": [
+				2,
+				"always",
+				""
+			],
+			"body-full-stop": [
+				1,
+				"always",
+				"."
+			],
+			"body-case": [
+				2,
+				"always",
+				"sentence-case"
+			]
+		}
+	},
+	"scripts": {
+		"prepare": "husky",
+		"prepublishOnly": "bun run build",
+		"build": "bun build src/index.ts --target=node --outdir dist/ --minify",
+		"lint": "eslint . --ext .js,.cjs,.mjs,.ts",
+		"prettier": "prettier . --check",
+		"prettier:fix": "prettier . --write",
+		"stylelint": "stylelint -c dist/index.js src/__test__/styles.css",
+		"stylelint:fix": "stylelint -c dist/index.js --fix src/__test__/styles.css"
+	}
+}
