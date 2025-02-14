@@ -1,8 +1,9 @@
 {
 	"name": "@duduar/stylelint-config",
 	"description": "Opinionated Stylelint configuration by Duduar",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"license": "MIT",
+	"private": false,
 	"author": {
 		"name": "Duduar",
 		"email": "support@duduar.dev"
@@ -12,7 +13,6 @@
 		"url": "git+https://github.com/duduardeagle/stylelint-config.git"
 	},
 	"type": "module",
-	"private": false,
 	"main": "dist/index.js",
 	"dependencies": {
 		"stylelint-config-standard": "36.0.1",
