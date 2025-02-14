@@ -37,16 +37,25 @@ const config = {
 			{
 				ignoreAtRules: [
 					"tailwind",
+					"source",
+					"reference",
+					"theme",
+					"utility",
+					"variant",
+					"custom-variant",
+					"apply",
 					"define-mixin",
 					"mixin",
-					"add-mixin",
-					"apply",
-					"theme"
+					"add-mixin"
 				]
 			}
 		],
 		"order/order": [
 			[
+				{
+					type: "at-rule",
+					name: "reference"
+				},
 				"dollar-variables",
 				"custom-properties",
 				{
@@ -91,6 +100,11 @@ const config = {
 					type: "rule",
 					name: "bem-modifiers",
 					selector: "^&-{1,2}[a-z]+(-[a-z]+)*$"
+				},
+				{
+					type: "at-rule",
+					name: "variant",
+					hasBlock: true
 				},
 				{
 					type: "at-rule",
