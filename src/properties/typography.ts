@@ -17,6 +17,8 @@ const group = {
 		"font-size",
 		"font-size-adjust",
 		"text-size-adjust",
+		"writing-mode",
+		"text-orientation",
 		"text-align",
 		"white-space",
 		"letter-spacing",
