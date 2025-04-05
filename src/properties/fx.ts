@@ -11,6 +11,7 @@ const group = {
 		"transition-duration",
 		"transition-timing-function",
 		"transition-delay",
+		"transition-behavior",
 		"animation",
 		"animation-name",
 		"animation-timing-function",
