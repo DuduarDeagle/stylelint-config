@@ -9,6 +9,7 @@ const group = {
 		"fill",
 		"background",
 		"background-image",
+		"background-origin",
 		"background-repeat",
 		"background-size",
 		"background-color",
