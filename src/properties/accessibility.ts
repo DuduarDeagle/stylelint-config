@@ -9,6 +9,7 @@ const group = {
 		"contain-intrinsic-height",
 		"contain-intrinsic-inline-size",
 		"contain-intrinsic-block-size",
+		"field-sizing",
 		"content-visibility",
 		"user-select",
 		"cursor",
