@@ -6,6 +6,7 @@ const group = {
 		"display",
 		"table-layout",
 		"tab-size",
+		"vertical-align",
 		"flex",
 		"flex-grow",
 		"flex-shrink",
